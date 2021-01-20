@@ -17,6 +17,11 @@ public class CarsListApplication {
         typeCar.add(new Toyota(220, 2, 2));
         typeCar.add(new Citroen(230, 3, 3));
 
+        typeCar.remove(1);
+        typeCar.remove(new Toyota(220, 2, 2));
+
+
+        System.out.println(typeCar.size());
         for (Car car : typeCar) {
             if (car.getSpeed() > 50 && car.increaseSpeed() > 50 && car.decreaseSpeed() >50)
                 System.out.println(typeCar);
