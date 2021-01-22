@@ -1,5 +1,6 @@
 package com.kodilla.collections.lists.homework;
 
+import com.kodilla.collections.arrays.homework.CarUtils;
 import com.kodilla.collections.interfaces.homework.Car;
 import com.kodilla.collections.interfaces.homework.Citroen;
 import com.kodilla.collections.interfaces.homework.Mercedes;
@@ -22,9 +23,8 @@ public class CarsListApplication {
 
 
         System.out.println(typeCar.size());
-        for (Car car : typeCar) {
-            if (car.getSpeed() > 50 && car.increaseSpeed() > 50 && car.decreaseSpeed() >50)
-                System.out.println(typeCar);
+        for (Car car: typeCar) {
+            CarUtils.describeCar(car);
         }
     }
 }
