@@ -10,9 +10,10 @@ public class SchoolDirectory {
         Principal jessie = new Principal("Jessie", "Pinkman");
         Principal bart = new Principal("Bart", "Simpson");
 
-        School johnSchool = new School("Szkoła Podstawowa");
-        School jessieSchool = new School("Szkoła Gimnazjalna");
-        School bartSchool = new School("Szkoła Licealna");
+        School johnSchool = new School (10);
+        School jessieSchool = new School(20);
+        School bartSchool = new School(30);
+
 
         school.put(john, johnSchool);
         school.put(jessie, jessieSchool);
