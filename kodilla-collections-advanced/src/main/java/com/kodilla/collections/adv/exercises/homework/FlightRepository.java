@@ -1,0 +1,15 @@
+package com.kodilla.collections.adv.exercises.homework;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FlightRepository {
+
+    public Flight Flight(String departure, String arrival){
+        List<Flight> FlightsTable = new ArrayList<>();
+        FlightsTable.add(new Flight("Warszawa", "Poznań"));
+        FlightsTable.add(new Flight("Kraków", "Poznań"));
+        FlightsTable.add(new Flight("Kraków", "Katowice"));
+        return new Flight(departure, arrival);
+    }
+}
