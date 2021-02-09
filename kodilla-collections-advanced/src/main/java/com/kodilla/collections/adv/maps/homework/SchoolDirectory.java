@@ -1,6 +1,7 @@
 package com.kodilla.collections.adv.maps.homework;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SchoolDirectory {
@@ -10,9 +11,13 @@ public class SchoolDirectory {
         Principal jessie = new Principal("Jessie", "Pinkman");
         Principal bart = new Principal("Bart", "Simpson");
 
-        School johnSchool = new School (10);
-        School jessieSchool = new School(20);
-        School bartSchool = new School(30);
+        List<Integer> classesJhonSchool = List.of(1,2,3,4,10);
+        List<Integer> classesJessieSchool = List.of(10,20,30,50,15);
+        List<Integer> classesBartSchool = List.of(5, 15, 25, 35, 45);
+
+        School johnSchool = new School (classesJhonSchool);
+        School jessieSchool = new School(classesJessieSchool);
+        School bartSchool = new School(classesBartSchool);
 
 
         school.put(john, johnSchool);

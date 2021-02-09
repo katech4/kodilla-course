@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-    private List<Integer> classes = new ArrayList<>();
+    private List<Integer> classes;
 
-    public School (Integer... classes) {
-        for (Integer clas : classes)
-        this.classes.add(clas);
+    public School (List<Integer> classes) {
+           this.classes=classes;
     }
 
     @Override
