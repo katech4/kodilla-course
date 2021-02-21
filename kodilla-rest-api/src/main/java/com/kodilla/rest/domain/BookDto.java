@@ -6,7 +6,8 @@ public class BookDto {
     private String title;
     private String author;
 
-    public BookDto() {   // [1]
+    public BookDto() {
+                        // [1]
     }                    // [2]
 
     public BookDto(String title, String author) {
@@ -14,9 +15,15 @@ public class BookDto {
         this.author = author;
     }
 
-    public String getTitle() { return title; }
+    public String getTitle()
+    {
+        return title; }
 
-    public String getAuthor() { return author; }
+    public String getAuthor()
+    { return author; }
+
+
+
 
     @Override
     public boolean equals(Object o) {
