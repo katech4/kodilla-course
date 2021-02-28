@@ -6,11 +6,7 @@ public class BookDto {
     private String title;
     private String author;
 
-    public BookDto() {
-                        // [1]
-    }                    // [2]
-
-    public BookDto(String title, String author) {
+     public BookDto(String title, String author) {
         this.title = title;
         this.author = author;
     }
