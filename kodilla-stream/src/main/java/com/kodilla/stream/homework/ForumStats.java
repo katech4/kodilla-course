@@ -6,12 +6,19 @@ public class ForumStats {
     public static void main(String[] args) {
         double NumberOfPost = UsersRepository.getUsersList()
                 .stream()
-                .map(u -> u.getNumberOfPost())
-                .mapToInt(n -> n)
+                .filter(u -> u.getAge() >= 40)
+                .mapToDouble(u -> u.getNumberOfPost())
                 .average()
                 .getAsDouble();
-        //czy tutaj i w jakiej formie można zrobić pętle ???
-        // user.age >= 40;         System.out.println(NumberOfPost));
-        //user.age <40
+        System.out.println(NumberOfPost);
+
+
+        double NumberOfPost1 = UsersRepository.getUsersList()
+                .stream()
+                .filter(u -> u.getAge() < 40)
+                .mapToDouble(u -> u.getNumberOfPost())
+                .average()
+                .getAsDouble();
+        System.out.println(NumberOfPost1);
     }
-}
+};
