@@ -1,4 +1,4 @@
-package com.kodilla.stream.homework;
+/*package com.kodilla.stream.homework;
 
 import com.kodilla.stream.UsersManager;
 
@@ -20,3 +20,4 @@ public class TaskManager {
         return task.getName();
     }
 }
+*/
