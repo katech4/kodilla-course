@@ -2,7 +2,9 @@ package com.kodilla.bank.homework;
 
 public class Bank {
 
-    public static void main(String[] args) {
+    private CashMachine[] cashMachines;
 
+    public Bank(CashMachine[] cashMachines){
+        this.cashMachines = cashMachines;
     }
 }
