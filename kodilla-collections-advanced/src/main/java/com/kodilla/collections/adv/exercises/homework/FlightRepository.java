@@ -5,11 +5,11 @@ import java.util.List;
 
 public class FlightRepository {
 
-    public Flight Flight(String departure, String arrival){
+    public static List<Flight> Flight(){
         List<Flight> FlightsTable = new ArrayList<>();
         FlightsTable.add(new Flight("Warszawa", "Poznań"));
         FlightsTable.add(new Flight("Kraków", "Poznań"));
         FlightsTable.add(new Flight("Kraków", "Katowice"));
-        return new Flight(departure, arrival);
+        return FlightsTable;
     }
 }
